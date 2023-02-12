@@ -902,7 +902,7 @@ const matchers = {};
 const nodes = [
   () => __vitePreload(() => import("./chunks/0-21d8e7f3.js"), true ? ["./chunks/0-21d8e7f3.js","./chunks/_layout-9a8b0c19.js","./components/layout.svelte-e24b3401.js","./chunks/index-e98e3991.js"] : void 0, import.meta.url),
   () => __vitePreload(() => import("./chunks/1-403a6ded.js"), true ? ["./chunks/1-403a6ded.js","./components/error.svelte-4b2e2f16.js","./chunks/index-e98e3991.js","./chunks/singletons-3e9dac7e.js"] : void 0, import.meta.url),
-  () => __vitePreload(() => import("./chunks/2-5399018e.js"), true ? ["./chunks/2-5399018e.js","./components/pages/_page.svelte-bb0e9daf.js","./chunks/index-e98e3991.js"] : void 0, import.meta.url)
+  () => __vitePreload(() => import("./chunks/2-7572e48f.js"), true ? ["./chunks/2-7572e48f.js","./components/pages/_page.svelte-d23d7a82.js","./chunks/index-e98e3991.js"] : void 0, import.meta.url)
 ];
 const server_loads = [];
 const dictionary = {

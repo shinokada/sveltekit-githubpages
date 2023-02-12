@@ -19,8 +19,11 @@ function create_fragment(ctx) {
   let li3;
   let t10;
   let t11;
-  let p1;
+  let li4;
   let t12;
+  let t13;
+  let p1;
+  let t14;
   return {
     c() {
       h1 = element("h1");
@@ -40,10 +43,13 @@ function create_fragment(ctx) {
       t8 = text("Update svelte.config.js by changing adapter-auto to adaptor-static.\n   `import adapter from '@sveltejs/adapter-static';`");
       t9 = space();
       li3 = element("li");
-      t10 = text('Add a script to package.json. `"gh-pages": "npm run build && npx gh-pages -d build"`');
+      t10 = text("Add the following to `src/routes/+layout.js`\n    `export const prerender = true;`");
       t11 = space();
+      li4 = element("li");
+      t12 = text('Add a script to package.json. `"gh-pages": "npm run build && npx gh-pages -d build"`');
+      t13 = space();
       p1 = element("p");
-      t12 = text("Now you just need to run `npm run gh-pages`.");
+      t14 = text("Now you just need to run `npm run gh-pages`.");
     },
     l(nodes) {
       h1 = claim_element(nodes, "H1", {});
@@ -75,13 +81,18 @@ function create_fragment(ctx) {
       t9 = claim_space(ul_nodes);
       li3 = claim_element(ul_nodes, "LI", {});
       var li3_nodes = children(li3);
-      t10 = claim_text(li3_nodes, 'Add a script to package.json. `"gh-pages": "npm run build && npx gh-pages -d build"`');
+      t10 = claim_text(li3_nodes, "Add the following to `src/routes/+layout.js`\n    `export const prerender = true;`");
       li3_nodes.forEach(detach);
+      t11 = claim_space(ul_nodes);
+      li4 = claim_element(ul_nodes, "LI", {});
+      var li4_nodes = children(li4);
+      t12 = claim_text(li4_nodes, 'Add a script to package.json. `"gh-pages": "npm run build && npx gh-pages -d build"`');
+      li4_nodes.forEach(detach);
       ul_nodes.forEach(detach);
-      t11 = claim_space(nodes);
+      t13 = claim_space(nodes);
       p1 = claim_element(nodes, "P", {});
       var p1_nodes = children(p1);
-      t12 = claim_text(p1_nodes, "Now you just need to run `npm run gh-pages`.");
+      t14 = claim_text(p1_nodes, "Now you just need to run `npm run gh-pages`.");
       p1_nodes.forEach(detach);
     },
     m(target, anchor) {
@@ -103,9 +114,12 @@ function create_fragment(ctx) {
       append_hydration(ul, t9);
       append_hydration(ul, li3);
       append_hydration(li3, t10);
-      insert_hydration(target, t11, anchor);
+      append_hydration(ul, t11);
+      append_hydration(ul, li4);
+      append_hydration(li4, t12);
+      insert_hydration(target, t13, anchor);
       insert_hydration(target, p1, anchor);
-      append_hydration(p1, t12);
+      append_hydration(p1, t14);
     },
     p: noop,
     i: noop,
@@ -122,7 +136,7 @@ function create_fragment(ctx) {
       if (detaching)
         detach(ul);
       if (detaching)
-        detach(t11);
+        detach(t13);
       if (detaching)
         detach(p1);
     }
