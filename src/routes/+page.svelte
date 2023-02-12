@@ -1,2 +1,25 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Welcome to SvelteKit + GitHub Pages</h1>
+
+<p>
+  It is super easy to publish SvelteKit project on GitHub Pages. Create a GitHub repo before starting this.
+</p>
+
+<ul>
+  <li>
+    Install SvelteKit
+  </li>
+  <li>
+    Install @sveltejs/adapter-static and gh-pages. `npm i -D @sveltejs/adapter-static gh-pages`
+  </li>
+  <li>
+   Update svelte.config.js by changing adapter-auto to adaptor-static.
+   `import adapter from '@sveltejs/adapter-static';`
+  </li>
+  <li>
+    Add a script to package.json. `"gh-pages": "npm run build && npx gh-pages -d build"`
+  </li>
+</ul>
+
+<p>
+  Now you just need to run `npm run gh-pages`.
+</p>
