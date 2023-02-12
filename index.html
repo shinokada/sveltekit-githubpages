@@ -5,30 +5,45 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="./_app/immutable/start-891ca1bc.js">
+		<link rel="modulepreload" href="./_app/immutable/start-2358afe9.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index-e98e3991.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/singletons-3e9dac7e.js">
 		<link rel="modulepreload" href="./_app/immutable/components/layout.svelte-e24b3401.js">
 		<link rel="modulepreload" href="./_app/immutable/modules/pages/_layout.js-fa3c4266.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout-9a8b0c19.js">
-		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-308ed1c0.js">
+		<link rel="modulepreload" href="./_app/immutable/components/pages/_page.svelte-bb0e9daf.js">
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
 
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Welcome to SvelteKit + GitHub Pages</h1>
+
+<p>It is super easy to publish SvelteKit project on GitHub Pages. Create a GitHub repo before starting this.
+</p>
+
+<ul><li>Install SvelteKit
+  </li>
+  <li>Install @sveltejs/adapter-static and gh-pages. `npm i -D @sveltejs/adapter-static gh-pages`
+  </li>
+  <li>Update svelte.config.js by changing adapter-auto to adaptor-static.
+   `import adapter from &#39;@sveltejs/adapter-static&#39;;`
+  </li>
+  <li>Add a script to package.json. `&quot;gh-pages&quot;: &quot;npm run build &amp;&amp; npx gh-pages -d build&quot;`
+  </li></ul>
+
+<p>Now you just need to run `npm run gh-pages`.
+</p>
 
 
-		<script type="module" data-sveltekit-hydrate="1oibf46">
-			import { start } from "./_app/immutable/start-891ca1bc.js";
+		<script type="module" data-sveltekit-hydrate="kc66oa">
+			import { start } from "./_app/immutable/start-2358afe9.js";
 
 			start({
 				assets: "",
 				env: {},
-				target: document.querySelector('[data-sveltekit-hydrate="1oibf46"]').parentNode,
-				version: "1676165074133",
+				target: document.querySelector('[data-sveltekit-hydrate="kc66oa"]').parentNode,
+				version: "1676165751882",
 				hydrate: {
 					node_ids: [0, 2],
 					data: [null,null],
