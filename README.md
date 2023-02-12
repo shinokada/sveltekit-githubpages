@@ -17,16 +17,23 @@ npm i -D @sveltejs/adapter-static gh-pages
 
 ## Update svelte.config.js by changing adapter-auto to adaptor-static.
 
-```sh
+```js
 import adapter from '@sveltejs/adapter-static';
+```
+
+## +layout.js
+
+Add the following to `src/routes/+layout.js`
+
+```js
+export const prerender = true;
 ```
 
 ## Add a script to package.json. 
 
-```sh
+```json
 "gh-pages": "npm run build && npx gh-pages -d build"
 ```
-
 
 ## Deploy
 
