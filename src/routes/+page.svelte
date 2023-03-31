@@ -21,6 +21,9 @@
   <li>
     Add a script to package.json. `"gh-pages": "npm run build && npx gh-pages -d build"`
   </li>
+  <li>
+    If you are using a postcss such as Tailwind css, you need to add an empty .nojekyll file to the gh-pages branch.
+  </li>
 </ul>
 
 <p>

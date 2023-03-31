@@ -39,3 +39,7 @@ export const prerender = true;
 
 Now you just need to run `npm run gh-pages`.
 
+## .nojekyll file for Tailwind CSS/Postcss
+
+If you are using a postcss such as Tailwind css, you need to add **an empty `.nojekyll`** file to the `gh-pages` branch.
+
