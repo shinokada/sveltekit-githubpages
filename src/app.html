@@ -3,10 +3,23 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Hunter Stevens • Full-Stack Developer</title>
+		<!--CDNs-->
+		<script src="https://cdn.tailwindcss.com"></script>
+		<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.0.1/dist/alpine.js" defer></script>
+		<!-- Google Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet" />
 		%sveltekit.head%
 	</head>
-	<body data-sveltekit-preload-data="hover">
+
+	<style>
+		@import '/global.css';
+	</style>
+
+	<body data-sveltekit-preload-data="hover" class="relative bg-slate-950 p-4">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
 </html>

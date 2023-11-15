@@ -1,0 +1,71 @@
+body {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+.glow {
+  text-shadow: 5px 5px 25px #757575, 0px 0px 20px #614ad3;
+}
+
+.glow-green {
+  text-shadow: 5px 5px 25px #757575, 0px 0px 20px #5bc461;
+}
+
+.glow-letterz {
+  text-shadow: 5px 5px 25px #757575, 0px 0px 20px #c1c1c1;
+}
+
+.glow-box {
+  box-shadow: 5px 5px 25px #757575, 0px 0px 20px #614ad3;
+}
+
+.glow-box-lang {
+  box-shadow: 5px 5px 25px #757575, 0px 0px 20px rgb(205, 21, 104);
+}
+
+.glow-box-contact {
+  box-shadow: 5px 5px 25px #757575, 0px 0px 20px rgb(21, 205, 33);
+}
+
+.shake-on-hover:hover {
+  animation: shake 0.3s ease-in-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(2px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -1px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -2px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 1px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(2px, -2px) rotate(-1deg);
+  }
+}
+.slide-in {
+  animation: slide-in-right 0.5s forwards;
+}
